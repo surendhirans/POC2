@@ -4,6 +4,7 @@ import { Daily, News, Surya } from "./MyComps";
  import {BrowserRouter,Routes,Route} from "react-router-dom"
 import { NewAccount } from "./SignUp";
 import { Login } from "./Login";
+import { Home } from "./Home";
 
 const App=()=>{
   return(
@@ -13,7 +14,7 @@ const App=()=>{
     <Routes>
     <Route path="/" exact element={<Login />} />
       <Route path="/sign" exact element={<NewAccount />} />
-      <Route path="/second/:sam" exact element={<News />} />
+      <Route path="/home" exact element={<Home />} />
       <Route path="/third/:katt" exact element={<Daily />} />
     </Routes>
     </BrowserRouter>

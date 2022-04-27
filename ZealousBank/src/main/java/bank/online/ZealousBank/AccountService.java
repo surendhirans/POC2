@@ -16,4 +16,8 @@ public class AccountService {
 	{
 		return repo.save(account);
 	}
+	public Account getByValid(long data1,String data2)
+	{
+		return repo.findAccountByValidation(data1, data2);
+	}
 }
