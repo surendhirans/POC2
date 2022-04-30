@@ -1,27 +1,26 @@
 import { useParams } from "react-router-dom"
 
-export const Surya=()=>{
+export const Agaram=()=>{
     return(
         <>
-        <h2>HI this is about agram foundation.</h2>
+            <h1>World best literature</h1>
         </>
     )
 }
 
-export const News=()=>{
-    const{sam}=useParams()
+export const Thenali=()=>{
     return(
         <>
-        <h2>News about the top actors in {sam}.</h2>
+            <h1>Assembly poet from vijayanagar emperium</h1>
         </>
     )
 }
 
-export const Daily=()=>{
-    const{katt}=useParams()
+export const Vikatan=()=>{
+    const{gopi}=useParams()
     return(
         <>
-        <h2>This is about a new foundation start behalf of actor{katt} .</h2>
+            <h1>Weekly article which has few {gopi}</h1>
         </>
     )
 }

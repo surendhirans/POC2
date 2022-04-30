@@ -28,6 +28,7 @@ export const Login=()=>{
         const t = await stepIn(log)
         if(t.data)
         {
+            localStorage.setItem("loggedperson",JSON.stringify(t.data))
             window.location.assign("/home");
         }
         else{
@@ -113,6 +114,7 @@ export const Login=()=>{
                                 <CancelIcon/>Cancel
                             </Button>
                         </div>
+                        <a href="/sign" className="link-success text-center text-decoration-none">a new Account?</a>
                     </div>
                 </div>
             </div>
